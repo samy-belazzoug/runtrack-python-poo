@@ -4,6 +4,8 @@ class Operation:
         self.nombre2 = nombre2
     
     def addition(self):
+        """Additionne les valeurs self.nombre1 et self.nombre2 
+        et les affiches dans le Terminal"""
         return self.nombre1 + self.nombre2
 
     def __repr__(self):
