@@ -22,4 +22,18 @@ class Cercle:
         return 2*self.rayon
     
     def afficherInfos(self):
-        return f"Voici quelques informations sur votre cercle :\nRayon : {self.rayon}\Circonférence : {self.circonference()}\n"
+        """Affiche toutes les informations du cercle"""
+        return f"Voici quelques informations sur votre cercle :\nRayon : {self.rayon}\nCirconférence : {self.circonference()}\nAire : {self.aire()}\nDiamètre : {self.diametre()}\n"
+    
+
+if __name__ == "__main__":
+    cercle1 = Cercle(4)
+    print(cercle1.afficherInfos())
+    print(cercle1.circonference())
+    print(cercle1.diametre())
+    print(cercle1.aire())
+    cercle2 = Cercle(7)
+    print(cercle2.afficherInfos())
+    print(cercle2.circonference())
+    print(cercle2.diametre())
+    print(cercle2.aire())
