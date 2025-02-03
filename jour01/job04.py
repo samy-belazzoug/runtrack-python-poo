@@ -4,6 +4,7 @@ class Personne:
         self.prenom = prenom
 
     def SePresenter(self):
+        """Retourne le nom et prénom de la personne."""
         return f"Je suis {self.prenom} {self.nom}"
 
 if __name__ == "__main__":
