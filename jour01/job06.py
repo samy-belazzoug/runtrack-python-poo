@@ -16,6 +16,7 @@ class Animal:
         """Permet de renommer l'animal."""
         self.nom = nom
         return f"L'animal se nomme {self.nom}"
+    
 
 if __name__ == "__main__":
     espece = Animal()
