@@ -22,10 +22,8 @@ class Personne:
         self.__objet = objet
     
     def ajouterPopulation(self):
-        x = int(self.__objet.get_habitants())
-        #print(type(x))
-        x += 1
-        y = self.__objet.set_habitants(x)
+        x = int(self.__objet.get_habitants())+1
+        self.__objet.set_habitants(x)
         return f"Mise a jour de la population de la Ville de {self.__objet.get_nom()} {self.__objet.get_habitants()} habitants"
 
 p = Ville("Paris",1000000)
