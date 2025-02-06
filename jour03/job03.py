@@ -24,18 +24,14 @@ class ListeDeTaches:
         tache.statut = "Terminée"
 
     def afficherListe(self):
-        for i in range(len(self.taches)):
-            print(Tache.afficherTache(self.taches[i]))
+        [print(Tache.afficherTache(self.taches[i])) for i in range(len(self.taches))]
     
     def filterListe(self):
         print("Taches à faire : ")
-        for i in range(len(self.taches)):
-            if Tache.afficherStatut(self.taches[i]) == "A faire":
-                print(Tache.afficherTache(self.taches[i]))
+        [print(Tache.afficherTache(self.taches[i])) for i in range(len(self.taches)) if Tache.afficherStatut(self.taches[i]) == "A faire"]
+        
         print("Taches terminées : ")
-        for j in range(len(self.taches)):
-            if Tache.afficherStatut(self.taches[j]) == "Terminée":
-                print(Tache.afficherTache(self.taches[j]))
+        [print(Tache.afficherTache(self.taches[j])) for j in range(len(self.taches)) if Tache.afficherStatut(self.taches[j]) == "A faire"]
 
 if __name__ == "__main__":
     todo1 = Tache("a","blabla")
