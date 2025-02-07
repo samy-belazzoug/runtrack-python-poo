@@ -5,7 +5,7 @@ class Personnage:
     def afficherAge(self):
         return self.age
 
-    def bonjour(self):
+    def bonjour():
         return "Hello"
     
     def modifierAge(self,age:int):
@@ -22,19 +22,16 @@ class Eleve(Personnage):
         return f"J'ai {self.age} ans"
 
 class Professeur(Personnage):
-    def __init__(self,age,matiereEnseignee):
+    def __init__(self, age,matiere):
         super().__init__(age)
-        self.__matiereEnseignee = matiereEnseignee
+        self.__matiereEnseignee = matiere
+    #def __init__(self,
     
-    def enseigner(self):
+    def enseigner():
         return "Le cours va commencer"
 
 if __name__ == "__main__":
     Nico = Personnage()
     Ulys = Eleve()
-    print(Ulys.bonjour())
-    print(Ulys.allerEnCours())
-    Ulys.modifierAge(15)
-    Rodrigo = Professeur(40,"Mathematiques")
-    print(Rodrigo.bonjour())
-    print(Rodrigo.enseigner())
+    print(Ulys.afficherAge())
+    
